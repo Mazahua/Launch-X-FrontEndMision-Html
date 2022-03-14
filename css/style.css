@@ -1,0 +1,302 @@
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            font-family: 'Ubuntu Condensed', sans-serif;
+        }
+        
+        nav {
+            position: relative;
+            z-index: 1;
+        }
+        
+        label {
+            margin-left: 2%;
+        }
+        
+        section {
+            width: 100%;
+        }
+        
+        .slider {
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+        
+        .slider ul {
+            display: flex;
+            padding: 0;
+            width: 500%;
+            animation: cambio 10s infinite alternate linear;
+        }
+        
+        .slider li {
+            width: 100%;
+            list-style: none;
+        }
+        
+        .slider img {
+            width: 100%;
+        }
+        
+        @keyframes cambio {
+            0% {
+                margin-left: 0;
+            }
+            20% {
+                margin-left: 0;
+            }
+            25% {
+                margin-left: -100%;
+            }
+            45% {
+                margin-left: -100%;
+            }
+            50% {
+                margin-left: -200%;
+            }
+            70% {
+                margin-left: -200%;
+            }
+            75% {
+                margin-left: -300%;
+            }
+            100% {
+                margin-left: -300%;
+            }
+        }
+        
+        .banner {
+            position: relative;
+            background-color: aliceblue;
+        }
+        
+        .banner-content img {
+            margin: 20px 0;
+            width: 100%;
+        }
+        
+        .banner-text {
+            position: absolute;
+            color: azure;
+            background-color: #d42a1e;
+            opacity: 95%;
+            top: 37%;
+            left: 60%;
+            transform: translateX(0%) translateY(-45%);
+        }
+        
+        .banner-text h2 {
+            font-size: 45px;
+        }
+        
+        .navbar-menu {
+            background: #ffcbf4;
+            height: 50px;
+            width: 100%;
+            position: fixed;
+        }
+        
+        .logo {
+            position: absolute;
+            color: azure;
+            font-size: 35px;
+            top: 7px;
+            font-weight: bold;
+            margin-left: 5%;
+        }
+        
+        .img-logo {
+            position: absolute;
+            max-width: 50px;
+            max-height: 50px;
+            margin-right: 5%;
+        }
+        
+        .navbar-menu ul {
+            float: right;
+            margin-right: 20px;
+            list-style: none;
+        }
+        
+        .nav-options li {
+            display: inline-block;
+            line-height: 50px;
+            margin: 0 5px;
+        }
+        
+        .nav-options li a {
+            color: aliceblue;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 20px;
+            padding: 5px 10px;
+            position: relative;
+            border-radius: 3px;
+        }
+        
+        a:focus,
+        a:hover {
+            background-color: #d42a1e;
+            transition: .5s;
+        }
+        
+        #check {
+            display: none;
+        }
+        
+        .checkbtn {
+            font-size: 25px;
+            float: right;
+            color: aliceblue;
+            line-height: 50px;
+            margin-right: 25px;
+            cursor: pointer;
+            display: none;
+        }
+        
+        .pasteles {
+            height: 97vh;
+            position: relative;
+            background-color: aliceblue;
+        }
+        
+        .sabores-pasteles {
+            width: 100%;
+            hyphens: 100%;
+            text-align: center;
+        }
+        
+        .sabores-pasteles h2 {
+            font-size: 40px;
+            font-style: oblique;
+        }
+        
+        .sabores-pasteles p {
+            padding: 10px 50px;
+        }
+        
+        .img-pastel {
+            width: 100%;
+            border-radius: 5px;
+        }
+        
+        .pastel-imgx {
+            width: 33%;
+            float: left;
+        }
+        
+        .pastel-imgx h4 {
+            margin-bottom: 10px;
+            font-size: 19px;
+        }
+        
+        .img-pastelin {
+            width: 330px;
+            height: 330px;
+            display: block;
+            margin-left: 15%;
+        }
+        
+        .img-pastelin:hover {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+        
+        .pedido {
+            position: relative;
+        }
+        
+        .pedido-content {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .pedido-content h2 {
+            font-size: 45px;
+            color: #d42a1e;
+        }
+        
+        .pedido-group {
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 35px;
+        }
+        
+        .form-pedido {
+            width: 90%;
+            float: left;
+        }
+        
+        .form-control {
+            width: 85%;
+            margin: 0.6rem;
+            display: block;
+        }
+        
+        @media(max-width: 1024px) {
+            .logo {
+                padding-left: 40pxl;
+            }
+            .nav-options li a {
+                font-size: 16px;
+                padding: 7px 10px;
+            }
+            .img-pastelin {
+                width: 250px;
+                height: 250px;
+                padding-bottom: 20px;
+                padding-top: 10px;
+            }
+        }
+        
+        @media(max-width: 768px) {
+            .checkbtn {
+                display: block;
+            }
+            .logo {
+                margin-left: 10%;
+            }
+            .img-logo {
+                margin-right: 5%;
+            }
+            .nav-options {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #cecece;
+                top: 50px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+            .nav-options li {
+                display: block;
+                border-bottom: 1px;
+                z-index: 1;
+            }
+            .nav-options li a {
+                font-size: 18px;
+            }
+            nav li:hover {
+                background-color: #d42a1e;
+            }
+            nav li a:hover {
+                color: aliceblue;
+            }
+            #check:checked~ul {
+                left: 0;
+            }
+            .pastel-imgx {
+                width: 100%;
+            }
+            .img-pastelin {
+                width: 200px;
+                height: 200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
