@@ -27,13 +27,13 @@
                     <a href="#">Inicio</a>
                 </li>
                 <li>
-                    <a href="#">Servicios</a>
+                    <a href="#pasteles">Pasteles</a>
                 </li>
                 <li>
-                    <a href="#">Clientes</a>
+                    <a href="#pedido">Pedido</a>
                 </li>
                 <li>
-                    <a href="#">Contacto</a>
+                    <a href="#">Informacion</a>
                 </li>
             </ul>
 
@@ -65,6 +65,7 @@
         </section>
 
         <section class="pasteles">
+            <a name="pasteles"></a>
             <div class="sabores-pasteles">
                 <h2> Nuestras Especialidades</h2>
                 <p>Pastelería Strawberry paratodo tipo de evento, satisfacemos tu antojo y el de tus invitados, contamos con una extensa variedad en pasteles gourmet, recién horneados, cupcakes, pan artesanal, pan dulce y repostería tradicional y francesa.
@@ -108,24 +109,25 @@
         </section>
 
         <section class="Pedido">
+            <a name="pedido"></a>
             <div class="pedido-content">
                 <h2>Haz tu pedido Online</h2>
                 <p>Con el siguiente formulario puedes realizar tu pedido desde el sitio</p>
             </div>
             <div class="pedido-group">
                 <form action="" class="form-pedido">
-
-                    <input type="text" placeholder="Nombre Completo">
-                    <input type="text" placeholder="Direccion">
-                    <input type="date" placeholder="Fecha que lo desea">
-                    <input type="number" placeholder="Telefono">
-                    <input type="email" placeholder="Correo">
-                    <input type="number" placeholder="Numero de tarjeta">
-
-                    <textarea rows="5" placeholder="Ingrese informacion que debe de llevar el pastel"></textarea>
-                    <input type="submit">
+                    <div>
+                        <input type="text" placeholder="Nombre Completo" class="form-control">
+                        <input type="date" placeholder="Fecha que lo desea" class="form-control">
+                        <input type="number" placeholder="Telefono " class="form-control">
+                        <input type="email" placeholder="Correo " class="form-control">
+                        <input type="number" placeholder="Numero de tarjeta" class="form-control">
+                    </div>
+                    <textarea rows="5" placeholder="Ingrese informacion que debe de llevar el pastel" class="form-control"></textarea>
+                    <input type="submit" class="envia-btn">
                 </form>
             </div>
+
 
         </section>
 
