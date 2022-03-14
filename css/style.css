@@ -208,6 +208,7 @@
         
         .pedido {
             position: relative;
+            align-content: center;
         }
         
         .pedido-content {
@@ -224,17 +225,37 @@
             width: 100%;
             box-sizing: border-box;
             margin-top: 35px;
+            padding: 0 50px;
         }
         
         .form-pedido {
-            width: 90%;
+            width: 80%;
             float: left;
         }
         
         .form-control {
-            width: 85%;
-            margin: 0.6rem;
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.6rem 1rem;
             display: block;
+            border-radius: 5px;
+            outline: 0;
+            font-size: 15px;
+            border: 1.5px solid #cecece;
+        }
+        
+        .envia-btn {
+            display: block;
+            font-size: 1rem;
+            text-transform: uppercase;
+            background: #d42a1e;
+            color: azure;
+            border: none;
+            padding: 0.7rem 1.25rem;
+            margin: 0.6rem 0.8rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.5s ease;
         }
         
         @media(max-width: 1024px) {
